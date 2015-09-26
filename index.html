@@ -45,14 +45,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="material.min.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-amber.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-	.small-card-square.mdl-card {
-	  width: 320px;
+	.small-card.mdl-card {
 	  height: 320px;
 	}
-    #view-source {
+    #contact-email-us {
       position: fixed;
       display: block;
       right: 0;
@@ -65,220 +64,200 @@
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      <header class="mdl-layout__header mdl-layout--fixed-header mdl-color--primary">
+        <img src="images/logos/opghai_logo.jpg" class="mdl-layout--large-screen-only">
+        <div class="mdl-layout--small-screen-only mdl-layout--fixed-header mdl-layout__header-row">
           <h3>O.P. Ghai & Company</h3>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab ">Overview</a>
-          <a href="#products" class="mdl-layout__tab is-active">Products</a>
+          <a href="#overview" class="mdl-layout__tab is-active">Home</a>
+          <a href="#products" class="mdl-layout__tab ">Products</a>
           <a href="#contact-us" class="mdl-layout__tab">Contact Us</a>
         </div>
       </header>
       <main class="mdl-layout__content mdl-no-spacing">
-        <div class="mdl-layout__tab-panel  mdl-no-spacing" id="overview">
-         <!--  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#features" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section> -->
-			<section class="section--footer mdl-grid mdl-color--white">
+        <div class="mdl-layout__tab-panel is-active mdl-no-spacing mdl-color--white" id="overview">
+			<section class="section--footer mdl-grid">
             <image src="images/logos/ncl-group.gif" class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"/>
 			
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>NCL Group</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              Bison Panel etc.
             </div>
             <image src="images/logos/gyproc.jpg" class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"/>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>Gyproc - Saint Gobain</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              Gypsum board, GI Sections etc.
             </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
+			<image src="images/logos/everest_logo.jpg" class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"/>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
+              <h5>Everest</h5>
+              Corrugated Sheets, Cement Planks.
             </div>
 
 			</section>
         </div>
-                <div class="mdl-layout__tab-panel is-active" id="products">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Product Details</h4>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+            <div class="mdl-layout__tab-panel " id="products">
+          <section class="section--center mdl-grid ">
+		  <h4 class="mdl-cell mdl-cell--12-col">Products</h4>
+		  
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">Gypsum Board</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+				<img src="images/gyproc-board.jpg" />
+			  </div>
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Gypboard Plain plasterboard is a standard gypsum board consisting of an aerated gypsum core encased in and firmly bonded to, strong paper liners.
+				  <h6>Application</h6>
+				  Suitable for use in most system applications where normal fire, structural and acoustic levels are specified. The product is ideal for false ceilings.
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Gypsum Board</h5>
-                  particle bonded cement board used <a href="#">proident minim</a>.
+				</div>
+			</div>
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">Bison Panel</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                <image src="images/bison-panel.jpg" />
+			</div>
+			    <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Bison Panel is a cement bonded particle board that is fire, weather, & termite resistant a good sound insulating material.
+				  <p>It can be used for doors, false ceilings, external & internal wall claddings, mezzanine flooring, acoustic roofs, car porch ceilings, roof underlays, interior & exterior walls, single & double skin partitions, guard rooms, duct covers, building facades, furniture, cupboards, school benches, kitchen underlays, outdoor cabins, prefab shelters, wall sidings, & more. Bison is unique among particle boards in that it is available in a wide range of thicknesses - from 6mm to 40mm. Such a wide range contributes to it's application versatility.</p>
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">Everest Fibre Board</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                 <image src="images/everest-cement.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Bison Board</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  The Fibre Cement Boards for walls are modern, high performance, durable and versatile boards. The fibre cement product range covers the roofings and the boards. The fibre cement roofing system uses the HIPP (High Impact Polypropylene) technology.
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+						<h2 class="mdl-card__title-text">Everest Corrugated Sheet</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                  <image src="images/everest-corrugated-sheet.gif" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Everest Fibre Board</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Everest corrugated sheets are made from the finest quality cement and fibre through a specially developed fibre orientation process. They undergo rigorous quality control – standards which are much higher than ISI – giving you a product of lasting value. They are low maintenance, easy to fix, fire resistant and economical. 
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">Everest Designer Ceiling Tiles</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                  <image src="images/everest-tiles.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Everest Corrugated Sheet</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Created to complement your décor, these moisture resistant ceilings come in a wide variety of unique designs and are available in two finishes – a white primered so you can have the paint colour of your choice and a ready-to-use ivory.
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Everest Fibre Board</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+				<image src="images/everest-plank.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Everest Designer Ceiling Tiles</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                 Everest Roofing, which is fibre cement corrugated roofing sheets, are being used extensively throughout the country for factories, power plants, stadiums, schools, urban and rural houses, to name a few. Everest Hi-Tech is a high impact resistance non-asbestos corrugated modern roofing system.
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Everest GI Section</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                  <image src="images/gi-section.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Everest Fibre Board</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Galvanised Partition Section such as G.I. False Ceiling Sections and T Grid False Ceiling
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Bitumen Grade - 85/25</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+                  <image src="images/bitumen-85-25.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Everest GI Section</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                   Bitumen 85/25 is widely used in providing waterproofing solutions
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
+				</div>
+			</div>
+            
+			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Thermocol Glass Wool</h2>
+			</div>
+			 <div class="mdl-card__media mdl-color--white">
+				 <image src="images/thermocol.jpg" />
                 </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Bitumen Grade - 85/25</h5>
-                  Description <a href="#">proident minim</a>.
+				<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing"> 
+                <div class="section__text mdl-cell ">
+                  Used in Insulation Solutions
                 </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Thermocol Glass Wool</h5>
-                  Description <a href="#">proident minim</a>.
-                </div>
+				</div>
               </div>
-            </div>
           </section>
         </div>
 		<div class="mdl-layout__tab-panel" id="contact-us">
 
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 		  <iframe  class="mdl-cell mdl-cell--6-col"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.4145541241858!2d76.80295230000002!3d30.728007499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed21ee71c6bd%3A0x46a46d4dd1f39115!2sO+P+Ghai+%26+Co!5e0!3m2!1sen!2sin!4v1442728254166"  frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div class="mdl-card mdl-cell mdl-cell--6-col ">
+            <div class="mdl-card small-card mdl-cell mdl-cell--6-col ">
 			<div class="mdl-card__supporting-text">
-				Yash Pal Ghai
+				<h5><b>Address</b>
+				<br><br>Yash Pal Ghai
 				<br>O.P. Ghai & Company
 				<br>Showroom 13, Sector 26, Madhya Marg
 				<br>Chandigarh (U.T.) PIN-160019
+				<br>Phone +91-9417377980 +91-172-2790520</h5>
 			  </div>
- <!--              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
-
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p> -->
             </div>
           </section>
         </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
-          </div>
-        </footer>
+<!-- <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">O.P Ghai & Company</div>
+   <!--  <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul> -->
+  </div>
+</footer> -->
       </main>
     </div>
-    <a href="mailto:ypghai@gmail.com" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Contact Us</a>
+    <a href="mailto:ypghai@gmail.com" target="_blank" id="contact-email-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Contact Us</a>
     <script src="material.min.js"></script>
   </body>
 </html>
