@@ -30,7 +30,7 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <meta name="apple-mobile-web-app-title" content="O.P. Ghai & Company">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -45,11 +45,39 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-amber.min.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue-amber.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-	.small-card.mdl-card {
-	  height: 320px;
+
+	
+	.small-card{
+		margin:5px 5px 5px 5px;
+	}
+	
+	.small-card > .mdl-card__title  {
+	  height: 100px;
+		background-size:contain;
+		background-repeat:no-repeat;
+	}
+	.section--center.section-compressed.mdl-grid{
+	max-width:750px;
+	}
+	
+	.mdl-navigation__link.custom-nav--link{
+	color:black;
+	}
+	#ncl-title{
+		background-image: url('./images/logos/ncl-group.gif');
+	}
+	#gyproc-title{
+		background-image: url('./images/logos/gyproc.jpg');
+	}
+	#everest-title{
+		background-image: url('./images/logos/everest_logo.jpg');
+	}
+	h2.title-header{
+	max-width:860px;
+	margin: 24px auto;
 	}
     #contact-email-us {
       position: fixed;
@@ -58,32 +86,75 @@
       bottom: 0;
       margin-right: 40px;
       margin-bottom: 40px;
-      z-index: 900;
+      z-index: 30;
     }
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout--fixed-header mdl-color--primary">
-        <img src="images/logos/opghai_logo.jpg" class="mdl-layout--large-screen-only">
-        <div class="mdl-layout--small-screen-only mdl-layout--fixed-header mdl-layout__header-row">
-          <h3>O.P. Ghai & Company</h3>
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Home</a>
-          <a href="#products" class="mdl-layout__tab ">Products</a>
-          <a href="#contact-us" class="mdl-layout__tab">Contact Us</a>
-        </div>
+  	
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header ">
+
+      <header class="mdl-layout__header mdl-color--white mdl-color-text--grey-700">
+		<div class="mdl-layout__header-row">
+			<h1 class="mdl-layout-title">O.P. Ghai & Company</h1>
+			<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a href="#overview" class="is-active mdl-navigation__link custom-nav--link">Home</a>
+					<a href="#products" class="mdl-navigation__link custom-nav--link">Products</a>
+					<a href="#contact-us" class="mdl-navigation__link custom-nav--link">Contact Us</a>
+			  </nav>
+		  </div>
+
       </header>
       <main class="mdl-layout__content mdl-no-spacing">
-        <div class="mdl-layout__tab-panel is-active mdl-no-spacing mdl-color--white" id="overview">
-			<section class="section--footer mdl-grid">
-            <image src="images/logos/ncl-group.gif" class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"/>
+        <div class="" id="overview">
+		<div class="section--center">
+		<h2 class="mdl-color-text--purple title-header">Deals in </h2>
+		</div>
+			<section class="section--center mdl-grid section-compressed">
 			
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>NCL Group</h5>
-              Bison Panel etc.
-            </div>
+			<div class="mdl-card mdl-shadow--4dp mdl-card small-card mdl-cell--4-col">
+				<div id ="ncl-title"  class="mdl-card__title ">
+					<!--<h5 class="mdl-card__title-text">NCL Group</h5> -->
+				</div>
+				<div class="mdl-card__supporting-text">
+				  Bison Panel etc.
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a href="#products" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					  Products
+					</a>
+				</div>
+			</div>
+			
+			<div class="mdl-card mdl-shadow--4dp mdl-card small-card mdl-cell--4-col">
+				<div id ="gyproc-title"  class="mdl-card__title ">
+					<!--<h5 class="mdl-card__title-text">Gyproc - Saint Gobain</h5> -->
+				</div>
+				<div class="mdl-card__supporting-text">
+				 Gypsum board, GI Sections etc.
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a href="#products" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					  Products
+					</a>
+				</div>
+			</div>
+			
+			<div class="mdl-card mdl-shadow--4dp mdl-card small-card mdl-cell--4-col">
+				<div id ="everest-title"  class="mdl-card__title ">
+					<!--<h5 class="mdl-card__title-text">Everest</h5> -->
+				</div>
+				<div class="mdl-card__supporting-text">
+				 Corrugated Sheets, Cement Planks.
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a href="#products" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					  Products
+					</a>
+				</div>
+			</div>
+			<!--
             <image src="images/logos/gyproc.jpg" class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone"/>
             <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
               <h5>Gyproc - Saint Gobain</h5>
@@ -94,12 +165,14 @@
               <h5>Everest</h5>
               Corrugated Sheets, Cement Planks.
             </div>
-
+			
+			-->
+			
 			</section>
         </div>
-            <div class="mdl-layout__tab-panel " id="products">
+            <div class="mdl-color--teal" id="products">
           <section class="section--center mdl-grid ">
-		  <h4 class="mdl-cell mdl-cell--12-col">Products</h4>
+		  <h2 class="mdl-cell--12-col mdl-color-text--white">Products</h2>
 		  
             <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
@@ -133,7 +206,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-			<h2 class="mdl-card__title-text">Everest Fibre Board</h2>
+			<h4 class="mdl-card__title-text">Everest Fibre Board</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
                  <image src="images/everest-cement.jpg" />
@@ -147,7 +220,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Everest Corrugated Sheet</h2>
+						<h2 class="mdl-card__title-text">Everest Corrugated Sheet</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
                   <image src="images/everest-corrugated-sheet.gif" />
@@ -161,7 +234,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-			<h2 class="mdl-card__title-text">Everest Designer Ceiling Tiles</h2>
+			<h4 class="mdl-card__title-text">Everest Designer Ceiling Tiles</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
                   <image src="images/everest-tiles.jpg" />
@@ -175,7 +248,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Everest Fibre Board</h2>
+				<h4 class="mdl-card__title-text">Everest Fibre Board</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
 				<image src="images/everest-plank.jpg" />
@@ -189,7 +262,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Everest GI Section</h2>
+				<h4 class="mdl-card__title-text">Everest GI Section</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
                   <image src="images/gi-section.jpg" />
@@ -203,7 +276,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Bitumen Grade - 85/25</h2>
+				<h4 class="mdl-card__title-text">Bitumen Grade - 85/25</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
                   <image src="images/bitumen-85-25.jpg" />
@@ -217,7 +290,7 @@
             
 			<div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col">
 			<div class="mdl-card__title">
-				<h2 class="mdl-card__title-text">Thermocol Glass Wool</h2>
+				<h4 class="mdl-card__title-text">Thermocol Glass Wool</h4>
 			</div>
 			 <div class="mdl-card__media mdl-color--white">
 				 <image src="images/thermocol.jpg" />
@@ -230,10 +303,12 @@
               </div>
           </section>
         </div>
-		<div class="mdl-layout__tab-panel" id="contact-us">
+		<div class="" id="contact-us">
+			
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+		  <h2 class="mdl-cell--12-col">Contact Us</h2>
 
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-		  <iframe  class="mdl-cell mdl-cell--6-col"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.4145541241858!2d76.80295230000002!3d30.728007499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed21ee71c6bd%3A0x46a46d4dd1f39115!2sO+P+Ghai+%26+Co!5e0!3m2!1sen!2sin!4v1442728254166"  frameborder="0" style="border:0" allowfullscreen></iframe>
+		  <iframe  class="mdl-cell mdl-cell--6-col "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d857.4145541241858!2d76.80295230000002!3d30.728007499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed21ee71c6bd%3A0x46a46d4dd1f39115!2sO+P+Ghai+%26+Co!5e0!3m2!1sen!2sin!4v1442728254166"  frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="mdl-card small-card mdl-cell mdl-cell--6-col ">
 			<div class="mdl-card__supporting-text">
 				<h5><b>Address</b>
@@ -244,6 +319,7 @@
 				<br>Phone +91-9417377980 +91-172-2790520</h5>
 			  </div>
             </div>
+			
           </section>
         </div>
 <!-- <footer class="mdl-mini-footer">
@@ -252,12 +328,15 @@
    <!--  <ul class="mdl-mini-footer__link-list">
       <li><a href="#">Help</a></li>
       <li><a href="#">Privacy & Terms</a></li>
-    </ul> -->
+    </ul> 
   </div>
-</footer> -->
+</footer>-->
       </main>
+	  
     </div>
+	<div class="mdl-spinner mdl-js-spinner is-active"></div>
     <a href="mailto:ypghai@gmail.com" target="_blank" id="contact-email-us" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Contact Us</a>
+	
     <script src="material.min.js"></script>
   </body>
 </html>
